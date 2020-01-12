@@ -1,0 +1,51 @@
+#l,#o,#a,#d,#i,#n,#g,#d1,#d2,#d3{
+    font-size:38pt;
+    font-weight:bold;
+    animation-name:anim;
+    animation-duration:2s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+    position: relative;
+    top:47vh;
+
+    text-shadow:5px 5px blue,-1px -1px 3px 5px blue;
+}
+#loader{
+    width: 100vw;
+    height: 100vh;
+    margin:auto auto;
+    text-align:center;
+    vertical-align: center;
+    position:fixed;
+    top: 0; left:0;
+    color:white;
+    background-color: black;
+}
+@keyframes anim{
+    0%{
+       transform:translate3d(0px,0px,0px);
+    }
+    45%{
+        transform:translate3d(0px,0px,500px);
+        font-size:44pt;
+        color:black;
+    }
+    55%{
+        transform:translate3d(0px,0px,500px);
+        font-size:30pt;
+        color:black;
+    }
+    100%{
+        transform:translate3d(0px,0px,0px);
+    }
+}
+#l{animation-delay:0s;}
+#o{animation-delay:0.2s;}
+#a{animation-delay:0.4s;}
+#d{animation-delay:0.6s;}
+#i{animation-delay:0.8s;}
+#n{animation-delay:1s;}
+#g{animation-delay:1.2s;}
+#d1{animation-delay:1.4s;}
+#d2{animation-delay:1.6s;}
+#d3{animation-delay:1.8s;}
